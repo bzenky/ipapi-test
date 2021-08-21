@@ -57,7 +57,7 @@
 @media screen and (max-width: 680px) {
   .container {
     h1 {
-      font-size: 28px;
+      font-size: 26px;
     }
 
     .card {
@@ -65,15 +65,15 @@
 
       .info {
         display: block;
-        font-size: 18px;
+        font-size: 16px;
         margin: 20px 0;
 
         h3 {
-          margin-bottom: 15px;
+          margin: 0 0 15px;
         }
 
         span {
-          max-width: 300px;
+          margin: 0 5px;
         }
       }
     }

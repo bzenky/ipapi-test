@@ -7,12 +7,12 @@ const ip = document.querySelector('.ip')
 fetch('https://ipapi.co/json/')
 .then(function(response) {
   response.json().then(jsonData => {
-    cidade.innerText += ' ' + jsonData.city;
-    estado.innerText += ' ' + jsonData.region;
-    pais.innerText += ' ' + jsonData.country;
-    ip.innerText += ' ' + jsonData.ip;
+    cidade.innerText += jsonData.city;
+    estado.innerText += jsonData.region;
+    pais.innerText += jsonData.country;
+    ip.innerText += jsonData.ip;
   });
 })
 .catch(function(error) {
-  console.log(error)
+  alert('Erro!')
 });
